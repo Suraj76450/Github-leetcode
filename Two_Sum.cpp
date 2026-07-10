@@ -1,21 +1,23 @@
 #include <iostream>
-#include <unordered_map>
 #include <vector>
 using namespace std;
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> seen;
-        seen.reserve(nums.size());
+        int n = nums.size();
 
-        for (int i = 0; i < static_cast<int>(nums.size()); i++) {
-            int complement = target - nums[i];
-            auto it = seen.find(complement);
-            if (it != seen.end()) {
-                return {it->second, i};
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+
+                if (i == j) {
+                    continue;
+                }
+
+                if (nums[i] + nums[j] == target) {
+                    return {i, j};
+                }
             }
-            seen[nums[i]] = i;
         }
 
         return {};
