@@ -5,20 +5,29 @@ using namespace std;
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int n = nums.size();
+        int candidate = 0;
+        int count = 0;
 
-        for (int i = 0; i < n; i++) {
-            int count = 0;
-
-            for (int j = 0; j < n; j++) {
-                if (nums[i] == nums[j]) {
-                    count++;
-                }
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
+                count = 1;
+            } else if (num == candidate) {
+                count++;
+            } else {
+                count--;
             }
+        }
 
-            if (count > n / 2) {
-                return nums[i];
+        int frequency = 0;
+        for (int num : nums) {
+            if (num == candidate) {
+                frequency++;
             }
+        }
+
+        if (frequency > nums.size() / 2) {
+            return candidate;
         }
 
         return -1;
