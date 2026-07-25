@@ -21,4 +21,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0189-rotate-array](https://github.com/Suraj76450/Github-leetcode/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/Suraj76450/Github-leetcode/tree/master/0283-move-zeroes) |
+## String
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/Suraj76450/Github-leetcode/tree/master/1021-remove-outermost-parentheses) |
+## Stack
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/Suraj76450/Github-leetcode/tree/master/1021-remove-outermost-parentheses) |
 <!---LeetCode Topics End-->
