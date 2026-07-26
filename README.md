@@ -24,9 +24,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0205-isomorphic-strings](https://github.com/Suraj76450/Github-leetcode/tree/master/0205-isomorphic-strings) |
 | [1021-remove-outermost-parentheses](https://github.com/Suraj76450/Github-leetcode/tree/master/1021-remove-outermost-parentheses) |
 ## Stack
 |  |
 | ------- |
 | [1021-remove-outermost-parentheses](https://github.com/Suraj76450/Github-leetcode/tree/master/1021-remove-outermost-parentheses) |
+## Hash Table
+|  |
+| ------- |
+| [0205-isomorphic-strings](https://github.com/Suraj76450/Github-leetcode/tree/master/0205-isomorphic-strings) |
 <!---LeetCode Topics End-->
