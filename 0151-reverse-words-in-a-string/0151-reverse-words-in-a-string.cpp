@@ -1,41 +1,53 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        // 1. Reverse the entire string
+
+        // Reverse the entire string so that the order of words gets reversed
         reverse(s.begin(), s.end());
 
         int n = s.size();
-        int left = 0;  // Marks the start of the current word
-        int right = 0; // The actual position we are writing to
-        int i = 0;     // Iterator for reading the string
 
+        // Store the final result
+        string ans = "";
+
+        // Pointer used to traverse the reversed string
+        int i = 0;
+
+        // Process each word one by one
         while (i < n) {
-            // Skip leading spaces for the current word
+
+            // Skip all leading and extra spaces
             while (i < n && s[i] == ' ') {
                 i++;
             }
-            
-            if (i == n) break; // Reached the end of the string
-            
-            // If this isn't the first word we're writing, add a single space before it
-            if (right != 0) {
-                s[right++] = ' ';
-            }
-            
-            left = right; // Mark where this specific word begins
-            
-            // Copy the word characters to their correct positions
+
+            // Stop if no more words are left
+            if (i >= n)
+                break;
+
+            // Store the current word
+            string word = "";
+
+            // Extract the current word until a space is encountered
             while (i < n && s[i] != ' ') {
-                s[right++] = s[i++];
+                word += s[i];
+                i++;
             }
-            
-            // 2. Reverse the individual word back to its normal character order
-            reverse(s.begin() + left, s.begin() + right);
+
+            // Reverse the extracted word to restore its original characters
+            reverse(word.begin(), word.end());
+
+            // Add a single space before the next word
+            // (Skip adding a space before the first word)
+            if (!ans.empty()) {
+                ans += " ";
+            }
+
+            // Append the current word to the answer
+            ans += word;
         }
-        
-        // 3. Resize the string to chop off the original trailing characters
-        s.resize(right);
-        
-        return s;
+
+        // Return the string with words in reversed order
+        return ans;
     }
 };
