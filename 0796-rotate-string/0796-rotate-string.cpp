@@ -10,8 +10,8 @@ public:
         string combined = s + s;
 
         // Check if goal is present inside combined
-        if (combined.find(goal) != string::npos)
-            return true;
+        if (combined.find(goal) != string::npos){
+            return true;}
 
         return false;
     }
