@@ -12,7 +12,6 @@ public:
         // Check if goal is present inside combined
         if (combined.find(goal) != string::npos){
             return true;}
-
         return false;
     }
 };
