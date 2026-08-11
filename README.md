@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/Suraj76450/Github-leetcode/tree/master/0035-search-insert-position) |
 | [0118-pascals-triangle](https://github.com/Suraj76450/Github-leetcode/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0136-single-number) |
 | [0189-rotate-array](https://github.com/Suraj76450/Github-leetcode/tree/master/0189-rotate-array) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/Suraj76450/Github-leetcode/tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0268-missing-number) |
 | [0704-binary-search](https://github.com/Suraj76450/Github-leetcode/tree/master/0704-binary-search) |
 ## Bit Manipulation
