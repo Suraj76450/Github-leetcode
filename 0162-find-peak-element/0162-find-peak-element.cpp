@@ -1,26 +1,34 @@
-// Binary Search Approach
-// Time Complexity: O(log n)
+// Linear Search Approach
+// Time Complexity: O(n)
 // Space Complexity: O(1)
 
 class Solution {
 public:
     int findPeakElement(vector<int>& nums) {
 
-        int low = 0;
-        int high = nums.size() - 1;
+        int n = nums.size();
 
-        while (low < high) {
+        // Only one element
+        if (n == 1)
+            return 0;
 
-            int mid = low + (high - low) / 2;
+        for (int i = 0; i < n; i++) {
 
-            if (nums[mid] < nums[mid + 1]) {
-                low = mid + 1;
-            }
-            else {
-                high = mid;
-            }
+            // First element
+            if (i == 0 && nums[i] > nums[i + 1])
+                return i;
+
+            // Last element
+            if (i == n - 1 && nums[i] > nums[i - 1])
+                return i;
+
+            // Middle element
+            if (i > 0 && i < n - 1 &&
+                nums[i] > nums[i - 1] &&
+                nums[i] > nums[i + 1])
+                return i;
         }
 
-        return low;
+        return -1;
     }
 };
