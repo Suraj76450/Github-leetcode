@@ -1,30 +1,45 @@
-// Brute Force Approach
-// Time Complexity: O(n)
+// Optimal Approach: Binary Search
+// Time Complexity: O(log n)
 // Space Complexity: O(1)
 
 class Solution {
 public:
-    int singleNonDuplicate(vector<int>& nums) {
+    int singleNonDuplicate(vector<int>& arr) {
 
-        int n = nums.size();
+        int n = arr.size();
 
         if (n == 1)
-            return nums[0];
+            return arr[0];
 
-        for (int i = 0; i < n; i++) {
+        if (arr[0] != arr[1])
+            return arr[0];
 
-            if (i == 0) {
-                if (nums[i] != nums[i + 1])
-                    return nums[i];
+        if (arr[n - 1] != arr[n - 2])
+            return arr[n - 1];
+
+        int low = 1;
+        int high = n - 2;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            // mid itself is the single element
+            if (arr[mid] != arr[mid - 1] &&
+                arr[mid] != arr[mid + 1]) {
+                return arr[mid];
             }
-            else if (i == n - 1) {
-                if (nums[i] != nums[i - 1])
-                    return nums[i];
+
+            // We are on the left side
+            if ((mid % 2 == 1 && arr[mid] == arr[mid - 1]) ||
+                (mid % 2 == 0 && arr[mid] == arr[mid + 1])) {
+                
+                low = mid + 1;
             }
+
+            // We are on the right side
             else {
-                if (nums[i] != nums[i - 1] &&
-                    nums[i] != nums[i + 1])
-                    return nums[i];
+                high = mid - 1;
             }
         }
 
