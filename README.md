@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Suraj76450/Github-leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0118-pascals-triangle](https://github.com/Suraj76450/Github-leetcode/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0136-single-number) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/Suraj76450/Github-leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0189-rotate-array](https://github.com/Suraj76450/Github-leetcode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/Suraj76450/Github-leetcode/tree/master/0283-move-zeroes) |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Suraj76450/Github-leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/Suraj76450/Github-leetcode/tree/master/0035-search-insert-position) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Suraj76450/Github-leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/Suraj76450/Github-leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0268-missing-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0268-missing-number) |
 | [0704-binary-search](https://github.com/Suraj76450/Github-leetcode/tree/master/0704-binary-search) |
 ## Bit Manipulation
