@@ -115,4 +115,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0136-single-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0136-single-number) |
 | [0268-missing-number](https://github.com/Suraj76450/Github-leetcode/tree/master/0268-missing-number) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/Suraj76450/Github-leetcode/tree/master/1021-remove-outermost-parentheses) |
 <!---LeetCode Topics End-->
