@@ -1,17 +1,17 @@
 class Solution {
 public:
-    int minEatingSpeed(vector<int>& arr, int h) {
+    int minEatingSpeed(vector<int>& piles, int h) {
 
         int low = 1;
-        int high = *max_element(arr.begin(), arr.end());
+        int high = *max_element(piles.begin(), piles.end());
 
         while (low <= high) {
 
             int mid = (low + high) / 2;
             long long hours = 0;
 
-            for (int i = 0; i < arr.size(); i++) {
-                hours += ceil((double)arr[i] / mid);
+            for (int i = 0; i < piles.size(); i++) {
+                hours += ceil((double)piles[i] / mid);
             }
 
             if (hours <= h)
