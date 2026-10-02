@@ -28,9 +28,9 @@ class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
 
-        unordered_map<int, int> mp;
+        unordered_map<int, int> mapu;
 
-        mp[0] = 1;
+        mapu[0] = 1;
 
         int sum = 0;
         int ans = 0;
@@ -39,11 +39,11 @@ public:
 
             sum += nums[i];
 
-            if (mp.find(sum - k) != mp.end()) {
-                ans += mp[sum - k];
+            if (mapu.find(sum - k) != mapu.end()) {
+                ans += mapu[sum - k];
             }
 
-            mp[sum]++;
+            mapu[sum]++;
         }
 
         return ans;
