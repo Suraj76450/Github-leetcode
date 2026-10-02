@@ -45,10 +45,10 @@ public:
         int count = 1;
         int ans = 1;
 
-        for (int i = 0; i < nums.size(); i++) {
+        for (int i = 1; i < nums.size(); i++) {
 
-            if (i == 0)
-                continue;
+            // if (i == 0)
+            //     continue;
 
             if (nums[i] == nums[i - 1])
                 continue;
